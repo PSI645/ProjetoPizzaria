@@ -42,7 +42,7 @@
             this.btnNovo = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.cmbTamanhoPizza = new System.Windows.Forms.ComboBox();
-            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.txtValorPagar = new System.Windows.Forms.TextBox();
             this.txtValorOpcionais = new System.Windows.Forms.TextBox();
             this.txtValorPizza = new System.Windows.Forms.TextBox();
             this.txt = new System.Windows.Forms.TextBox();
@@ -155,6 +155,7 @@
             this.btnCalcular.TabIndex = 12;
             this.btnCalcular.Text = "CALCULAR";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // btnNovo
             // 
@@ -183,13 +184,13 @@
             this.cmbTamanhoPizza.TabIndex = 15;
             this.cmbTamanhoPizza.Text = "TAMANHO DA PIZZA";
             // 
-            // txtTotal
+            // txtValorPagar
             // 
-            this.txtTotal.Location = new System.Drawing.Point(574, 67);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(134, 20);
-            this.txtTotal.TabIndex = 16;
-            this.txtTotal.TextChanged += new System.EventHandler(this.txtTotal_TextChanged);
+            this.txtValorPagar.Location = new System.Drawing.Point(574, 67);
+            this.txtValorPagar.Name = "txtValorPagar";
+            this.txtValorPagar.Size = new System.Drawing.Size(134, 20);
+            this.txtValorPagar.TabIndex = 16;
+            this.txtValorPagar.TextChanged += new System.EventHandler(this.txtTotal_TextChanged);
             // 
             // txtValorOpcionais
             // 
@@ -244,7 +245,7 @@
             this.Controls.Add(this.txt);
             this.Controls.Add(this.txtValorPizza);
             this.Controls.Add(this.txtValorOpcionais);
-            this.Controls.Add(this.txtTotal);
+            this.Controls.Add(this.txtValorPagar);
             this.Controls.Add(this.cmbTamanhoPizza);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnNovo);
@@ -282,7 +283,7 @@
         private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.ComboBox cmbTamanhoPizza;
-        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.TextBox txtValorPagar;
         private System.Windows.Forms.TextBox txtValorOpcionais;
         private System.Windows.Forms.TextBox txtValorPizza;
         private System.Windows.Forms.TextBox txt;
