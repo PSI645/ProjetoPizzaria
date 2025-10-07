@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoPizzaria
 {
-    class conexao
+    class Conexao
     {
         MySqlConnection con = new MySqlConnection("Data Source=localhost;Initial Catalog=dbpizza;user=root;pwd=12345678");
         //estanciando o mysqlconnection com con = new
