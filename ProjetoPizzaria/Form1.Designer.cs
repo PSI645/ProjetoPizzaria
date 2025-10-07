@@ -45,7 +45,7 @@
             this.txtValorPagar = new System.Windows.Forms.TextBox();
             this.txtValorOpcionais = new System.Windows.Forms.TextBox();
             this.txtValorPizza = new System.Windows.Forms.TextBox();
-            this.txt = new System.Windows.Forms.TextBox();
+            this.txtcodigo = new System.Windows.Forms.TextBox();
             this.grpOpcionais = new System.Windows.Forms.GroupBox();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).BeginInit();
@@ -137,6 +137,7 @@
             this.dgvPedido.Name = "dgvPedido";
             this.dgvPedido.Size = new System.Drawing.Size(733, 134);
             this.dgvPedido.TabIndex = 10;
+            this.dgvPedido.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvPedido_MouseDoubleClick_1);
             // 
             // btnSair
             // 
@@ -155,7 +156,7 @@
             this.btnCalcular.TabIndex = 12;
             this.btnCalcular.Text = "CALCULAR";
             this.btnCalcular.UseVisualStyleBackColor = true;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click_1);
             // 
             // btnNovo
             // 
@@ -174,7 +175,7 @@
             this.btnSalvar.TabIndex = 14;
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.UseVisualStyleBackColor = true;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click_1);
             // 
             // cmbTamanhoPizza
             // 
@@ -207,13 +208,13 @@
             this.txtValorPizza.Size = new System.Drawing.Size(138, 20);
             this.txtValorPizza.TabIndex = 18;
             // 
-            // txt
+            // txtcodigo
             // 
-            this.txt.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txt.Location = new System.Drawing.Point(53, 14);
-            this.txt.Name = "txt";
-            this.txt.Size = new System.Drawing.Size(93, 20);
-            this.txt.TabIndex = 19;
+            this.txtcodigo.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtcodigo.Location = new System.Drawing.Point(53, 14);
+            this.txtcodigo.Name = "txtcodigo";
+            this.txtcodigo.Size = new System.Drawing.Size(93, 20);
+            this.txtcodigo.TabIndex = 19;
             // 
             // grpOpcionais
             // 
@@ -234,6 +235,7 @@
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(124, 20);
             this.txtPesquisar.TabIndex = 21;
+            this.txtPesquisar.TextChanged += new System.EventHandler(this.txtPesquisar_TextChanged_1);
             // 
             // Form1
             // 
@@ -243,7 +245,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtPesquisar);
             this.Controls.Add(this.grpOpcionais);
-            this.Controls.Add(this.txt);
+            this.Controls.Add(this.txtcodigo);
             this.Controls.Add(this.txtValorPizza);
             this.Controls.Add(this.txtValorOpcionais);
             this.Controls.Add(this.txtValorPagar);
@@ -287,7 +289,7 @@
         private System.Windows.Forms.TextBox txtValorPagar;
         private System.Windows.Forms.TextBox txtValorOpcionais;
         private System.Windows.Forms.TextBox txtValorPizza;
-        private System.Windows.Forms.TextBox txt;
+        private System.Windows.Forms.TextBox txtcodigo;
         private System.Windows.Forms.GroupBox grpOpcionais;
         private System.Windows.Forms.TextBox txtPesquisar;
     }
